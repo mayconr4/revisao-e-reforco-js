@@ -3,7 +3,14 @@
 
 
 let preco = 100; 
-let resultado;
+let resultado; 
+
+const aluno = "Fulano";
+console.log(aluno); 
+// sempre declarar antes de usar
+
+
+
 // quando declarar let não declarar na saida
 if (preco >= 50) { 
      resultado = "Beleza...";
