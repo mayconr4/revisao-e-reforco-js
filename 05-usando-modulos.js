@@ -7,7 +7,10 @@ import alunos from "./modulos-esm/alunos.js";
 import {pessoa,livro,alunos as personagens} from "./dados.js";
 
 //Iportação de multiplos recursos/módulos usando ESM
-import { saudacao,clientes, separador } from "./modulos-esm/exemplos.js"; 
+import { saudacao,clientes, separador } from "./modulos-esm/exemplos.js";  
+
+
+import { converterParaMaiuscula, converterParaMinuscula, valorFormatado } from "./modulos-esm/funcoes.js";
 
 saudacao("Fulano de tal");
 console.log(clientes);
@@ -29,4 +32,26 @@ for (const aluno of alunos){
 separador();
 
 console.log("Personagens");
-console.log(personagens);
+console.log(personagens); 
+
+/*Execicios 
+1) crie um arquivo chmado "funcoes.js" dentro da pasta "modulos-esm"
+2) Dentro dele , programe 3 funções (USANDO ARROW FUNCTION):
+   - converter caracteres para MAIUSCULO
+   - Converter caracteres para MINÚSCULO
+   -  formatar valor em moeda brasileira (real)
+3) Exporte-as como modulos
+4) no arquivo 05, importe e utiliza estas funções passando textos e valores para testes.
+
+*/ 
+separador();
+
+console.log(converterParaMaiuscula("maycon henrique silva santos"));  
+
+
+console.log(converterParaMinuscula("MAYCON HENRIQUE SILVA SANTOS"));  
+
+
+console.log(valorFormatado(1000));
+
+
