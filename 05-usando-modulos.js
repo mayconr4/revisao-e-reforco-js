@@ -10,7 +10,11 @@ import {pessoa,livro,alunos as personagens} from "./dados.js";
 import { saudacao,clientes, separador } from "./modulos-esm/exemplos.js";  
 
 
-import { converterParaMaiuscula, converterParaMinuscula, valorFormatado } from "./modulos-esm/funcoes.js";
+import { 
+    converterParaMaiuscula,
+     converterParaMinuscula, 
+     valorFormatado 
+} from "./modulos-esm/funcoes.js";
 
 saudacao("Fulano de tal");
 console.log(clientes);
