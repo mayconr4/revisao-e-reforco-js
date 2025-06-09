@@ -7,15 +7,18 @@ import alunos from "./modulos-esm/alunos.js";
 import {pessoa,livro,alunos as personagens} from "./dados.js";
 
 //Iportação de multiplos recursos/módulos usando ESM
-import { saudacao,clientes, separador } from "./modulos-esm/exemplos.js";  
-
+import { saudacao,clientes, separador } from "./modulos-esm/exemplos.js";   
 
 import { 
     converterParaMaiuscula,
      converterParaMinuscula, 
      valorFormatado ,
      formatarMoeda
-} from "./modulos-esm/funcoes.js";
+} from "./modulos-esm/funcoes.js"; 
+
+// import * as funcoes from "./modulos-esm/funcoes.js" 
+// console.log(funcoes.converterParaMaiuscula("m"));
+//exemplo de outro jeito de export
 
 saudacao("Fulano de tal");
 console.log(clientes);
