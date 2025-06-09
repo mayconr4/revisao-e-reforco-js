@@ -10,3 +10,15 @@ saudacao("Fulano de tal");
 console.log(clientes);
 
 separador();
+
+console.log(alunos[0]);
+console.log(alunos)
+
+separador();
+
+
+for (const aluno of alunos){ 
+    
+    console.log(aluno); 
+
+}
