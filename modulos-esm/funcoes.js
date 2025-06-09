@@ -37,6 +37,19 @@ export const valorFormatado = (valor ) => {
     } 
   ) 
   
+} ; 
+
+
+export const formatarMoeda = (valor, moeda = 'BRL', localidade = 'pt-br' ) => { 
+    return  valor.toLocaleString( 
+    localidade,
+    { 
+
+        style: 'currency', 
+         currency:  moeda
+    } 
+  ) 
+  
 } ;
  
 

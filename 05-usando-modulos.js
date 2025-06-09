@@ -13,7 +13,8 @@ import { saudacao,clientes, separador } from "./modulos-esm/exemplos.js";
 import { 
     converterParaMaiuscula,
      converterParaMinuscula, 
-     valorFormatado 
+     valorFormatado ,
+     formatarMoeda
 } from "./modulos-esm/funcoes.js";
 
 saudacao("Fulano de tal");
@@ -58,4 +59,4 @@ console.log(converterParaMinuscula("MAYCON HENRIQUE SILVA SANTOS"));
 
 console.log(valorFormatado(1000));
 
-
+console.log(formatarMoeda(3000, 'EUR ','fr'));
