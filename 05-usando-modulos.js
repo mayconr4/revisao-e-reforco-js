@@ -4,7 +4,7 @@
 import alunos from "./modulos-esm/alunos.js"; 
 
 // osu do as/apelido para veitar conflito de nomes
-import {pessoa,livro,alunos as personagens} from "./dados.js";
+import {pessoa,livro,alunos as personagens} from "./modulos-esm/dados.js";
 
 //Iportação de multiplos recursos/módulos usando ESM
 import { saudacao,clientes, separador } from "./modulos-esm/exemplos.js";   

@@ -8,7 +8,10 @@
 <body>
     <h1>Acessando módulos</h1>
     <hr>
-    <ul id="lista-alunos"></ul> 
+    <ul id="lista-alunos">          
+
+        
+    </ul> 
 
     <!-- Exercicios de revisão progframe aqui as instruções necessárias para fazer com que os dados do
      array alunos, semjam inseridos como itens (tag <li>)
@@ -24,9 +27,22 @@
 
     <script type="module">
 
-        import {alunos } from "./modulos-esm/dados.js";
+        import {alunos } from "./modulos-esm/dados.js"; 
+                 
+        const  listaDeAlunos = document.getElementById("lista-alunos");                      
 
-        console.log(alunos);
+        for (const aluno of alunos){ 
+            
+          let item =  document.createElement("li"); 
+            
+          item.innerHTML = aluno;
+          
+          listaDeAlunos.appendChild(item);
+        }                     
+
+
+        
+
     </script>
 
 
