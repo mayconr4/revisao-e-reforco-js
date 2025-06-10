@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando modulos JS  em páginas html</title>
+</head>
+<body>
+    <h1>Acessando módulos</h1>
+    <hr>
+    <ul id="lista-alunos"></ul> 
+
+    <!-- Exercicios de revisão progframe aqui as instruções necessárias para fazer com que os dados do
+     array alunos, semjam inseridos como itens (tag <li>)
+        dentro da lista não-ordenada chamada lista-alunos.
+        
+     Dicas:
+     
+        - use seleção de elemento DOM 
+        - use loop para percorrer os elementos do array
+        - Crie a tag li dinamicamente com o JS 
+        - Adicione o conteudo array dentro da tag <li> criada
+        -->
+
+    <script type="module">
+
+        import {alunos } from "./modulos-esm/dados.js";
+
+        console.log(alunos);
+    </script>
+
+
+</body>
+</html>

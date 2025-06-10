@@ -23,7 +23,9 @@
 
 const converterParaMaiuscula = (texto) =>{ 
     return texto.toUpperCase();
-}        
+}         
+
+
 
 const converterParaMinuscula = (texto) =>{ 
     return texto.toLowerCase(); 
