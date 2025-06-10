@@ -53,6 +53,11 @@ export const formatarMoeda = (valor, moeda = 'BRL', localidade = 'pt-br' ) => {
   ) 
   
 } ;
+
+/*Usamos o rest operator para obte ruma lista de parâmetors não importando a quantidade */
+export function classificar(...texto){ 
+  return texto.sort();
+}
  
 
 // return valor.toFixed(2); 
