@@ -81,7 +81,7 @@ console.log(monitor);
 console.log(mouse);
 console.log(numero);
 console.log(funcao("maycon"));
-
+separador();
 //faca a destruturação dos  elementos
 
 const guloseimas = [
@@ -93,3 +93,85 @@ const guloseimas = [
   "pizza",
   "esfiha",
 ];
+
+//Destruturação com operador rest
+const [brigadeiro, brownie, torta, ...salgados] = guloseimas;
+console.log(brigadeiro);
+console.log(salgados); // virou um array
+
+separador();
+
+/*Destruturando objetos */
+const musico = {
+  nome: "David Glamour",
+  instrumento: "Guitarra",
+  idade: 77,
+  banda: "Pink Floyd",
+};
+
+//Acessando propriedade atráves do objeto (sem destruturação)
+// console.log(musico.nome);
+// console.log(musico.idade);
+// separador();
+
+// com destruturação
+const { nome, instrumento, idade, banda } = musico;
+
+console.log(nome);
+console.log(instrumento);
+console.log(banda);
+console.log(idade);
+
+const aluno = {
+  nome: "maycon",
+  cidade: "são paulo",
+  estado: "SP",
+};
+
+//destruturaçãoo com alias/apelido em propriedade
+const { nome: nomeDoAluno, cidade, estado } = aluno;
+
+console.log(nomeDoAluno);
+console.log(cidade);
+console.log(estado);
+separador();
+
+/*Mini-exercicio */
+const paciente = {
+  nome: "Gabriel Viana",
+  idade: 19,
+  contatos: ["gabriel@gmail.com", "11-98765-4321"],
+  sintomas: "Sonolência permanente , coriza tosse, bronquite.....",
+  mensalidade: 568.75,
+  endereco: {
+    localidade: "Rua Francisco coimbra",
+    numero: "403",
+    bairro: "penha",
+  },
+  atendimento: () => (paciente.idade >= 60 ? "prioritario" : "normal"),
+};
+
+// Destruturando todos os elementos deste objeto paciente, tornando-os  novas constantes
+
+// Use o console.log para testar o acessso a cada nova constante desestruturada
+
+const {
+  nome: nomePaciente,
+  idade: idadePaciente,
+  contatos: [email, telefone],
+  sintomas,
+  mensalidade,
+  endereco: { localidade, numero: numeroEndereco, bairro },
+  atendimento,
+} = paciente;
+
+console.log(nomePaciente);
+console.log(idadePaciente);
+console.log(email);
+console.log(telefone);
+console.log(sintomas);
+console.log(mensalidade);
+console.log(localidade);
+console.log(numeroEndereco);
+console.log(bairro);
+console.log(atendimento());
