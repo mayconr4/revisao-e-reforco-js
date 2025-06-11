@@ -40,5 +40,12 @@ console.log(linguagens);
 
 const [frontEnd, backEnd] = linguagens;
 
-console.log(frontEnd);
-console.log(backEnd);
+console.log(frontEnd[2]); //JS
+console.log(backEnd[3]); //Python
+
+separador();
+
+// Destruturação aninhada
+const [[html, css, js], [php, node, sql, python, asp]] = linguagens;
+console.log(js);
+console.log(python);
