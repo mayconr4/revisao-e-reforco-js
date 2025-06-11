@@ -21,8 +21,24 @@ const capitais = [
 
 separador();
 
-//Destruturando alguns valores do array
+//Destruturando alguns valores do array (omitimos Cruritiba e belo horizonte)
 const [paraiba, amazonas, , bahia] = capitais;
 console.log(paraiba);
 console.log(amazonas);
 console.log(bahia);
+
+separador();
+
+const linguagens = [
+  ["HTML", "CSS", "JS"],
+  ["PHP", "Node.Js", "SQL", "Python", "ASP.Net"],
+];
+console.log(linguagens);
+
+//console.log(linguagens[0][2]);
+//console.log(linguagens[1][3]);
+
+const [frontEnd, backEnd] = linguagens;
+
+console.log(frontEnd);
+console.log(backEnd);
