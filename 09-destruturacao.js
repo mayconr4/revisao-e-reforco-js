@@ -61,6 +61,18 @@ const diversos = [
   (texto) => texto.toUpperCase(),
 ];
 
+/*
+faça a destruturação de elmentos deste array
+
+const  [frase,perifericos] = diversos 
+
+teste usando o console.log para exibir cada elmento extraido
+console.log(frase);
+
+
+const [teclado, monitor, mouse] = perifericos
+*/
+
 const [javaScript, [teclado, monitor, mouse], numero, funcao] = diversos;
 
 console.log(javaScript);
@@ -71,3 +83,13 @@ console.log(numero);
 console.log(funcao("maycon"));
 
 //faca a destruturação dos  elementos
+
+const guloseimas = [
+  "brigadeiro",
+  "brownie",
+  "torta de limão",
+  "coxinha",
+  "pastel",
+  "pizza",
+  "esfiha",
+];
