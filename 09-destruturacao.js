@@ -49,3 +49,25 @@ separador();
 const [[html, css, js], [php, node, sql, python, asp]] = linguagens;
 console.log(js);
 console.log(python);
+
+separador();
+
+/*Mini exercicio */
+
+const diversos = [
+  "JavaScript - Reforco",
+  ["Teclado", "Monitor", "Mouse"],
+  2112,
+  (texto) => texto.toUpperCase(),
+];
+
+const [javaScript, [teclado, monitor, mouse], numero, funcao] = diversos;
+
+console.log(javaScript);
+console.log(teclado);
+console.log(monitor);
+console.log(mouse);
+console.log(numero);
+console.log(funcao("maycon"));
+
+//faca a destruturação dos  elementos
