@@ -175,3 +175,17 @@ console.log(localidade);
 console.log(numeroEndereco);
 console.log(bairro);
 console.log(atendimento());
+
+separador();
+
+function processarPedido([produto, preco, marca = "não informado"]) {
+  console.log("Produto: " + produto);
+  console.log("Preço: " + preco);
+  console.log("Marca: " + marca);
+}
+
+const pedidoA = ["Tv", 1500, "Sony"];
+processarPedido(pedidoA);
+
+const pedidoB = ["Notebook", 2500];
+processarPedido(pedidoB);
