@@ -55,3 +55,30 @@ const descontos = cursos.map((curso) => {
 });
 
 console.log(descontos);
+
+separador();
+
+//Exemplo 3: gerar um novo array completo(ou seja com os objeto completo com os precos atualizados com desconto) mas com os preços atualizados com o desconto
+
+const cursosComDesconto = cursos.map((curso) => {
+  return {
+    ...curso, //spread das propriedades do curso(copianod -as para cá)
+    preco: curso.preco - curso.preco * 0.1, // mas o preco é atualzado
+  };
+});
+
+console.log(cursosComDesconto);
+
+separador();
+
+/*Exercício
+Gere uma nova lista de cursos contendo apenas os titulos e as categorias. */
+
+const titulosComCategoria = cursos.map((curso) => {
+  return {
+    titulo: curso.titulo,
+    categoria: curso.categoria,
+  };
+});
+
+console.log(titulosComCategoria);
