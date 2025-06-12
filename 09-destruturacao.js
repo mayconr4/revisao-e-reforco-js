@@ -192,8 +192,9 @@ processarPedido(pedidoB);
 
 separador();
 
-const exibirDados = (filme) => {
-  console.log(`Filme: ${filme.titulo} - Ano: ${filme.ano}\n`);
+// ano = "qual exemplo", siginifica que este parametro é opcional
+const exibirDados = ({ titulo, ano = "desconhecido" }) => {
+  console.log(`Filme: ${titulo} - Ano: ${ano}\n`);
 };
 
 const filme1 = {
