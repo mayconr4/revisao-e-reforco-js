@@ -38,10 +38,11 @@ const servicos = [
   { codigo: 5, tipo: "Instalação", status: "Concluido" },
 ];
 
-const verficaSituacao = servicos.filter((servico) => {
-  return servico.status == "Pendente";
-});
+const verficaSituacao = servicos.filter(
+  (servico) => servico.status === "Pendente"
+);
+
 // atendimento () => (paciente.idade >= 60 ? "prioritario" : "normal")
 console.log(verficaSituacao);
 
-const exibirSituacao = (tipo, status) => {};
+//const exibirSituacao = (tipo, status) => {};
