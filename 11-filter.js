@@ -44,5 +44,62 @@ const verficaSituacao = servicos.filter(
 
 // atendimento () => (paciente.idade >= 60 ? "prioritario" : "normal")
 console.log(verficaSituacao);
-
 //const exibirSituacao = (tipo, status) => {};
+
+separador();
+
+// Exemplo 3
+const cursosDesign = cursos.filter((curso) => curso.categoria === "Design");
+
+console.log(cursosDesign);
+
+// Exemplo 4
+const cursoExcetoDesign = cursos.filter(
+  (curso) => curso.categoria !== "Design"
+);
+
+console.log(cursoExcetoDesign);
+
+separador();
+
+/*Exercicio 
+Gere um novo array com os curso que atendam os seguntes critérios: 
+- Categoria: Front-End OU Mobile
+- Preços acima de 600  
+*/
+
+// const criteriosCurso = cursos.filter(([categoria, preco]) => [
+//   categoria === "Fron-End" || "Mobile",
+//   preco > 600,
+// ]);
+
+const criteriosCurso = cursos.filter(
+  (curso) =>
+    (curso.categoria == "Fron-End" || curso.categoria == "Mobile") &&
+    curso.preco > 600
+);
+
+console.log(criteriosCurso);
+
+separador();
+
+const cursosPorCategoriaComDesconto = cursos
+  .filter((curso) => curso.categoria == "Back-End")
+  .map((curso) => {
+    return {
+      ...curso,
+      preco: curso.preco - curso.preco * 0.1,
+    };
+  });
+
+//map((curso) => curso.preco - curso.preco * 0.1);
+//cursos.map(curso)
+
+console.log(cursosPorCategoriaComDesconto);
+
+// const cursosComDesconto = cursos.map((curso) => {
+//   return {
+//     ...curso, //spread das propriedades do curso(copianod -as para cá)
+//     preco: curso.preco - curso.preco * 0.1, // mas o preco é atualzado
+//   };
+// });
