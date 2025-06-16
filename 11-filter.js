@@ -92,6 +92,13 @@ const cursosPorCategoriaComDesconto = cursos
     };
   });
 
+// const desafio = cursos
+// .filter(({categoria}) => categoria === "Back-end").map((curso) => ({
+//   ...curso
+//   preco: preco.
+
+// }))
+
 //map((curso) => curso.preco - curso.preco * 0.1);
 //cursos.map(curso)
 
